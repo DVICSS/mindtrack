@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import { Home, Zap, TrendingUp, Play, MessageSquare, BookOpen, Trophy, Star } from "lucide-react";
+import { Home, Zap, TrendingUp, Play, MessageSquare, BookOpen, Trophy, Star, User } from "lucide-react";
 import { AuthProvider } from "@/contexts/AuthContext";
 
 const geistSans = Geist({
@@ -74,6 +74,7 @@ export default function RootLayout({
                 <NavItem href="/vods" icon={Play} label="VODs" />
                 <NavItem href="/chat" icon={MessageSquare} label="Chat IA" />
                 <NavItem href="/ranking" icon={Trophy} label="Ranking" />
+                <NavItem href="/perfil" icon={User} label="Perfil" />
               </div>
             </div>
           </nav>
